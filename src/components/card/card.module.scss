@@ -1,0 +1,65 @@
+.root {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgb(213, 213, 213);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.iconContainer {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+
+  & svg {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.body {
+  flex: 1 1 0;
+}
+
+.cardTitle {
+  p {
+    font-weight: 600;
+  }
+}
+
+.iconDark {
+  background: #ffffff;
+}
+
+.iconWarning {
+  background: #e38869;
+}
+
+.iconSuccess {
+  background: #8acda0;
+}
+
+.dark {
+  background: #00210b;
+  color: #ffffff;
+}
+
+.warning {
+  background: #FFEAE3;
+  color: #1b1b1b;
+}
+
+.success {
+  background: #f4f4f4;
+  color: #1b1b1b;
+}

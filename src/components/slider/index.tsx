@@ -13,7 +13,7 @@ import { SlideBlock } from './parts/slide'
 export const Slider = () => {
   const pagination = {
     clickable: true,
-    renderBullet: function (_, className) {
+    renderBullet: function (index: number, className: string): string {
       return `<span class="${className} ${styles.pag}"></span>`
     }
   }
@@ -26,7 +26,7 @@ export const Slider = () => {
         modules={[Pagination]}
         className={styles.swiper}
       >
-        {sliderData.map((el, index) => (
+        {sliderData.map((el: ISlideBlock, index: number) => (
           <SwiperSlide key={index} className={styles.swiperSlide}>
             <SlideBlock {...el} />
           </SwiperSlide>

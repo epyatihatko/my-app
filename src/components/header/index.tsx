@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu'
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace'
 import ChevronLeftOutlinedIcon from '@mui/icons-material/ChevronLeftOutlined'
@@ -20,9 +20,9 @@ import icon from 'src/assets/icons/icon.svg'
 const pages = ['Home', 'Treat me now', 'Schedule visit', 'Messages']
 
 export const Header = () => {
-  const [anchorElNav, setAnchorElNav] = useState()
+  const [anchorElNav, setAnchorElNav] = useState<Element | null>()
 
-  const handleOpenNavMenu = (event) => {
+  const handleOpenNavMenu = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorElNav(event.currentTarget)
   }
 
@@ -84,7 +84,7 @@ export const Header = () => {
               mr: 1
             }}
           >
-            {pages.map((page) => (
+            {pages.map((page: string) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
@@ -128,7 +128,7 @@ export const Header = () => {
                 display: { xs: 'block', md: 'none' }
               }}
             >
-              {pages.map((page) => (
+              {pages.map((page: string) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign='center' color='inherit'>
                     {page}

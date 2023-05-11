@@ -3,7 +3,12 @@ import { Box } from '@mui/material'
 
 import styles from './slide.module.scss'
 
-export const SlideBlock = ({ image, text }) => {
+interface ISlideBlock {
+  image: string
+  text: string
+}
+
+export const SlideBlock: React.FC<ISlideBlock> = ({ image, text }) => {
   return (
     <Box>
       <Box

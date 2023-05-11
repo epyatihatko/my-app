@@ -43,11 +43,14 @@
     ]
   },
   "devDependencies": {
+    "@types/node-sass": "^4.11.3",
+    "@types/react-dom": "^18.2.4",
     "eslint": "^8.37.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-import-resolver-typescript": "^2.7.1",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
-    "prettier": "^2.8.7"
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.4"
   }
 }

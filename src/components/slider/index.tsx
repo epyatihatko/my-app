@@ -26,7 +26,7 @@ export const Slider = () => {
         modules={[Pagination]}
         className={styles.swiper}
       >
-        {sliderData.map((el: ISlideBlock, index: number) => (
+        {sliderData.map((el: ISlideData, index: number) => (
           <SwiperSlide key={index} className={styles.swiperSlide}>
             <SlideBlock {...el} />
           </SwiperSlide>

@@ -17,7 +17,7 @@ function App() {
           <Typography component='h1'>Hi, [Kyle]!</Typography>
         </Box>
         <Box className={styles.cardContainer}>
-          {membersList.map((el, index) => (
+          {membersList.map((el: IMembersList, index: number) => (
             <CustomCard
               key={index}
               icon={el.icon}
@@ -32,7 +32,7 @@ function App() {
           <Typography component='h2'>Action items</Typography>
         </Box>
         <Box className={styles.cardContainer}>
-          {actionList.map((el, index) => (
+          {actionList.map((el: IActionList, index: number) => (
             <CustomCard
               key={index}
               icon={el.icon}
@@ -47,7 +47,7 @@ function App() {
           <Typography component='h2'>Action items</Typography>
         </Box>
         <Box className={styles.cardContainer}>
-          {careList.map((el, index) => (
+          {careList.map((el: ICareList, index: number) => (
             <CustomCard
               key={index}
               icon={el.icon}

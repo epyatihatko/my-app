@@ -20,7 +20,7 @@ import delivery from 'src/assets/icons/delivery.svg'
 import person from 'src/assets/icons/person.svg'
 import list from 'src/assets/icons/list.svg'
 
-export const membersList = [
+export const membersList: IMembersList[] = [
   {
     icon: frame1,
     title: 'Join [Video] Visit with Dr. Mark Greene',
@@ -35,7 +35,7 @@ export const membersList = [
   }
 ]
 
-export const actionList = [
+export const actionList: IActionList[] = [
   {
     icon: time,
     title: 'Schedule a follow-up appointment',
@@ -86,7 +86,7 @@ export const actionList = [
   }
 ]
 
-export const careList = [
+export const careList: ICareList[] = [
   {
     icon: phone,
     title: 'Schedule a visit or request a new prescription',
@@ -119,7 +119,7 @@ export const careList = [
   }
 ]
 
-export const sliderData = [
+export const sliderData: ISlideData[] = [
   {
     image: first,
     text: 'Try Zealthy’s weight loss program. We predict you’ll lose at least [30] lbs to achieve a weight of [170] lbs. '

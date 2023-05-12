@@ -6,15 +6,7 @@ import { Box, Typography } from '@mui/material'
 
 import styles from './card.module.scss'
 
-interface ICustomCard {
-  icon: string;
-  title: string;
-  text: string;
-  theme?: string;
-}
-
-
-export const CustomCard: React.FC<ICustomCard> = ({ icon, title, text, theme }) => {
+export const CustomCard: React.FC<IMembersList> = ({ icon, title, text, theme }) => {
   return (
     <Box
       className={classNames(styles.root, {
